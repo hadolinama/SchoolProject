@@ -1,0 +1,102 @@
+<!Doctype html>
+<html>
+
+<head>
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/enroll.css">
+    <title>Enrollment Form</title>
+
+</head>
+
+<body>
+    <!-- Enrollment Form -->
+    <form action="https://www.lyceé.edu" method="POST">
+        <p><strong>Parent's Information</strong></p>
+        <label for="first">First Name</label>
+        <input name="first" id="pfirst" type="text" placeholder="John" required>
+        <br>
+        <label for="last">Last Name</label>
+        <input name="last" id="plast" type="text" placeholder="Smith" required>
+        <br>
+
+        <div>
+            <label for="male">Male</label>
+            <input name="gender" id="pmale"type="radio" value="male">
+            <br>
+            <label for="female">Female</label>
+            <input name="gender" id="pfemale"type="radio" value="female">
+
+        </div>
+
+        <br>
+
+        <label>
+            Email:
+            <input  name="email" id="email-input" type="email" placeholder="your email" required>
+            </label>
+
+        <label>
+                Password:
+            <input name="password" id"password-input" type="password" placeholder="your password" pattern=".{7,12}" required title="7 to 12 characters">
+        </label
+        <br>
+        <br>
+        <label>
+                Confirm:
+            <input name="password" id="passwordc-input" type="password" placeholder="confirm password" pattern=".{7,12}" required title="7 to 12 characters">
+        </label
+        <br>
+        <br>
+        <br>
+        <label>
+            Phone:
+            <input id="phone-input" type="tel" required>
+
+        </label>
+
+        <div id="childrenInfo">
+
+            <p><strong>Child's Information</strong></p>
+
+            <label for="first">First Name</label>
+            <input name="first" id="first" type="text" placeholder="Little" required>
+            <label for="last">Last Name</label>
+            <input name="last" id="last" type="text" placeholder="Smith" required>
+
+            <div>
+                <label for="male">Male</label>
+                <input name="gender" id="male-btn"type="radio" value="male">
+                <br>
+                <label for="female">Female</label>
+                <input name="gender" id="female-btn"type="radio" value="female">
+
+            </div>
+            <br>
+            <div>
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="bday" name="bday" min="2017-10-02"><br>
+
+            </div>
+
+            <br>
+
+            <div>
+                <label for="agreed">I agree to the terms and conditions:</label>
+                <input id="agreed" name="agreed" type="checkbox">
+            </div>
+
+            <div>
+                <br>
+                <button id="add-child">Add A Child</button>
+                <button id="submit-form">submit</button>
+            </div>
+    </form>
+
+    <!-- jQuery intergration -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/enroll.js">
+
+    </script>
+</body>
+
+</html>
